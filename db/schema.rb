@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2020_03_24_161354) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "box_cards", force: :cascade do |t|
     t.integer "card_id"
     t.integer "box_id"
